@@ -4,7 +4,7 @@ Interactive Quiz Platform – A fully responsive web application offering multip
 Resolved formatting approach for seamless content copyingQuiz Application
 A fully responsive web application offering multiple quiz categories with real-time countdown timer, instant score calculation, and comprehensive answer review system. Built with HTML, CSS, and JavaScript.
 Features
-✨ Multiple Quiz Categories
+ Multiple Quiz Categories
 
 General Knowledge
 Science
@@ -46,12 +46,7 @@ HTML5 – Semantic markup and structure
 CSS3 – Responsive layout with flexbox
 JavaScript (Vanilla) – Core logic and interactivity
 
-Installation
 
-Clone the repository:
-
-git clone https://github.com/divyansh-verma/quiz-app.git
-cd quiz-app
 
 Open in browser:
 
@@ -160,7 +155,6 @@ Optimized animations
 Author
 Divyansh Verma
 GitHub: @divyansh-verma
-License
-MIT License – Feel free to use this project for learning and personal projects.
+
 
 Made with love for learning
