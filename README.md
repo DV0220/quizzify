@@ -1,172 +1,115 @@
 Quizzify
-Interactive Quiz Platform – A fully responsive web application offering multiple quiz categories with real-time countdown timer, instant score calculation, and comprehensive answer review system. Built with HTML, CSS, and JavaScript.
+
+Interactive Quiz Platform – A fully responsive web application offering multiple quiz categories with a real-time countdown timer, instant score calculation, and a detailed answer review system. Built with HTML, CSS, and JavaScript.
 
 Features
-Multiple Quiz Categories
 
-General Knowledge
-Science
-History
 
-Real-time Countdown Timer
-
-15 seconds per question
-Visual warning when time is running low
-Auto-submit on timeout
-
-Score Tracking & Analytics
-
-Live progress bar
-Percentage-based scoring
-Performance-based feedback messages
-
-Answer Review System
-
-Detailed review of all answers
-Highlights correct vs. incorrect responses
-Shows correct answers for missed questions
-
-Keyboard Navigation
-
-Press 1-4 to select answers
-Press Enter to proceed to next question
-Tab & Space for accessibility
-
-Fully Responsive Design
-
-Optimized for desktop, tablet, and mobile
-Dark theme UI for reduced eye strain
-Smooth transitions and animations
+Multiple quiz categories (General Knowledge, Science, History) with 5 questions each
+Questions shuffled randomly on every quiz attempt
+15-second countdown timer per question, turns red when 5 seconds or less remain
+Auto-advance with the question marked wrong if the timer runs out
+Progress bar that updates as you move through the quiz
+Real-time score tracking with percentage-based result
+Instant answer feedback — correct answer highlighted in green, wrong pick highlighted in red
+Detailed answer review after the quiz, showing your answer vs. the correct one for every question
+Keyboard shortcuts (1–4 to select an answer, Enter to move to the next question, Space/Enter to activate a focused option)
+Fully responsive, dark-themed UI
 
 
 Tech Stack
 
-HTML5 – Semantic markup and structure
-CSS3 – Responsive layout with flexbox
-JavaScript (Vanilla) – Core logic and interactivity
+
+HTML5
+CSS3 (Flexbox-based responsive layout)
+JavaScript (Vanilla ES6)
 
 
-Installation
+Project Structure
 
-Clone the repository:
+Quizzify/
+│── index.html
+│── styles.css
+│── script.js
+│── README.md
+
+How to Run
+
+
+Clone the repository
+
 
 git clone https://github.com/divyansh-verma/quizzify.git
 cd quizzify
 
-Open in browser:
 
-# Simply open index.html in your browser
-open index.html
-Or use a local server:
+Open the project folder.
+Open index.html directly in your browser, or serve it locally:
+
+
 python -m http.server 8000
-# Visit http://localhost:8000
+
+Then visit http://localhost:8000
 
 How to Play
 
-Select Category – Choose from General Knowledge, Science, or History
-Start Quiz – Click "Start Quiz" to begin
-Answer Questions – Select your answer (or press 1-4 on keyboard)
-Beat the Timer – Answer within 15 seconds per question
-Review Results – See your score and detailed answer breakdown
-Try Again – Restart with a new randomized quiz
+
+On the start screen, choose a category — General Knowledge, Science, or History
+Click Start Quiz to begin
+Select an answer by clicking an option or pressing 1–4 on your keyboard
+Answer within 15 seconds — the timer turns red in the last 5 seconds
+Click Next Question (or press Enter) to continue
+After the last question, view your score, a performance message, and a full answer review
+Click Try Again to return to the start screen and take another quiz
 
 
 Keyboard Shortcuts
-KeyAction1-4Select answer optionEnterProceed to next questionSpaceActivate focused buttonTabNavigate between elements
 
-Project Structure
-quizzify/
-├── index.html       # Main HTML file with all screens
-├── styles.css       # Responsive styling and theme
-├── script.js        # Quiz logic and interactivity
-└── README.md        # Documentation
+KeyAction1–4Select the corresponding answer optionEnterSelect a focused option, or proceed to the next questionSpaceSelect a focused answer option
 
 Screens
-Start Screen
 
-Category selection dropdown
-Quiz introduction
-Start button
 
-Quiz Screen
-
-Question display
-Multiple choice options (A, B, C, D)
-Countdown timer with color warning
-Progress bar
-Next button (appears after answer selection)
-
-Result Screen
-
-Final score with percentage
-Performance-based feedback
-Detailed answer review
-Restart button
+Start Screen – Category dropdown (General Knowledge / Science / History) and a Start Quiz button
+Quiz Screen – Question counter, live countdown timer, progress bar, four answer choices, and a Next/See Results button
+Result Screen – Score with percentage, performance message, full answer-by-answer review, and a Try Again button
 
 
 Features Breakdown
-Dynamic Question Bank
 
-5 questions per category
-Questions are shuffled randomly for each quiz
-Easy to add new categories and questions
 
-Timer System
+Question Bank – 5 hardcoded questions per category, reshuffled at the start of every quiz
+Timer System – 15-second countdown per question; text turns red at 5 seconds or below; auto-submits as an incorrect/timed-out answer if time runs out
+Scoring – Score is calculated as a percentage of correct answers out of total questions
+Feedback Messages
 
-15-second countdown per question
-Color changes to red when ≤5 seconds
-Auto-advances on timeout with penalty
-
-Accessibility
-
-ARIA labels for screen readers
-Keyboard navigation support
-High contrast dark theme
-Tab-friendly button navigation
-
-Feedback System
-
-Visual highlighting of correct/wrong answers
-Score-based performance messages:
-
-80%+ : Excellent!
-50-79% : Good effort!
-Below 50% : Keep studying!
+80% and above: "Excellent! You really know your stuff." 
+50–79%: "Good effort! A bit more practice and you'll ace it." 
+Below 50%: "Keep studying — you'll get there!" 
 
 
 
-
-Future Enhancements
-
-Add difficulty levels (Easy, Medium, Hard)
-Implement leaderboard system
-Save progress to localStorage
-Add more categories (Geography, Sports, etc.)
-Dark/Light mode toggle
-Export results as PDF
-Multiplayer quiz mode
-Timed practice sessions
+Answer Review – Lists every question with your chosen answer, and shows the correct answer as well whenever you got it wrong
 
 
 Browser Support
 
-Chrome (latest)
-Firefox (latest)
-Safari (latest)
-Edge (latest)
+
+Chrome, Firefox, Safari, Edge (latest versions)
 Mobile browsers (iOS Safari, Chrome Mobile)
 
 
-Performance
+Future Improvements
 
-Lightweight (~15KB total)
-No external dependencies
-Fast load time
-Optimized animations
+
+Difficulty levels (Easy, Medium, Hard)
+Leaderboard system
+Save progress/scores with localStorage
+More categories (Geography, Sports, etc.)
+Randomized questions pulled from an external API
+Dark/Light mode toggle
 
 
 Author
 Divyansh Verma
 GitHub: https://github.com/DV0220
-
-Made with passion for learning
