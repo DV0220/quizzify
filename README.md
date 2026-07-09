@@ -38,7 +38,6 @@ How to Run
 
 Clone the repository
 
-
 git clone https://github.com/divyansh-verma/quizzify.git
 cd quizzify
 
