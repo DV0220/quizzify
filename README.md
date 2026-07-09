@@ -1,114 +1,147 @@
-Quizzify
+# Quiz App
 
-Interactive Quiz Platform – A fully responsive web application offering multiple quiz categories with a real-time countdown timer, instant score calculation, and a detailed answer review system. Built with HTML, CSS, and JavaScript.
+A modern, responsive **Quiz Application** built using **HTML, CSS, and JavaScript**. Users can choose from multiple quiz categories, answer timed questions, view their score, and review their answers at the end.
 
-Features
+## Features
 
+- Multiple quiz categories
+  - General Knowledge
+  - Science
+  - History
+- 15-second timer for each question
+- Progress bar to track quiz completion
+- Instant answer validation
+- Modern dark-themed responsive UI
+- Keyboard shortcuts
+  - Press **1–4** to select an option
+  - Press **Enter** to move to the next question
+- Final score with performance message
+- Answer review after quiz completion
+- Restart quiz anytime
 
-Multiple quiz categories (General Knowledge, Science, History) with 5 questions each
-Questions shuffled randomly on every quiz attempt
-15-second countdown timer per question, turns red when 5 seconds or less remain
-Auto-advance with the question marked wrong if the timer runs out
-Progress bar that updates as you move through the quiz
-Real-time score tracking with percentage-based result
-Instant answer feedback — correct answer highlighted in green, wrong pick highlighted in red
-Detailed answer review after the quiz, showing your answer vs. the correct one for every question
-Keyboard shortcuts (1–4 to select an answer, Enter to move to the next question, Space/Enter to activate a focused option)
-Fully responsive, dark-themed UI
+---
 
+## Project Structure
 
-Tech Stack
+```text
+quiz-app/
+│
+├── index.html      # Main HTML file
+├── styles.css      # Styling
+├── script.js       # Quiz functionality
+└── README.md       # Project documentation
+```
 
+---
 
-HTML5
-CSS3 (Flexbox-based responsive layout)
-JavaScript (Vanilla ES6)
+## Technologies Used
 
+- HTML5
+- CSS3
+- JavaScript (ES6)
 
-Project Structure
+---
 
-Quizzify/
-│── index.html
-│── styles.css
-│── script.js
-│── README.md
+## How to Use
 
-How to Run
+1. Open the application.
+2. Select a quiz category.
+3. Click **Start Quiz**.
+4. Choose the correct answer before the timer runs out.
+5. Click **Next Question** after answering.
+6. Complete all questions.
+7. View your score and review your answers.
+8. Click **Try Again** to restart.
 
+---
 
-Clone the repository
+## Keyboard Controls
 
-git clone https://github.com/divyansh-verma/quizzify.git
-cd quizzify
+| Key | Action |
+|------|--------|
+| **1** | Select first option |
+| **2** | Select second option |
+| **3** | Select third option |
+| **4** | Select fourth option |
+| **Enter** | Next question |
 
+---
 
-Open the project folder.
-Open index.html directly in your browser, or serve it locally:
+## Screens
 
+- Start Screen
+- Quiz Screen
+- Result Screen
+- Answer Review
 
-python -m http.server 8000
+---
 
-Then visit http://localhost:8000
+## Scoring System
 
-How to Play
+- Correct answer = **1 point**
+- Wrong answer = **0 points**
+- Timeout = **0 points**
 
+Performance messages:
 
-On the start screen, choose a category — General Knowledge, Science, or History
-Click Start Quiz to begin
-Select an answer by clicking an option or pressing 1–4 on your keyboard
-Answer within 15 seconds — the timer turns red in the last 5 seconds
-Click Next Question (or press Enter) to continue
-After the last question, view your score, a performance message, and a full answer review
-Click Try Again to return to the start screen and take another quiz
+- **80% or above** → Excellent
+- **50% – 79%** → Good effort
+- **Below 50%** → Keep practicing
 
+---
 
-Keyboard Shortcuts
+## Responsive Design
 
-KeyAction1–4Select the corresponding answer optionEnterSelect a focused option, or proceed to the next questionSpaceSelect a focused answer option
+The application is optimized for:
 
-Screens
+- Desktop
+- Tablet
+- Mobile devices
 
+---
 
-Start Screen – Category dropdown (General Knowledge / Science / History) and a Start Quiz button
-Quiz Screen – Question counter, live countdown timer, progress bar, four answer choices, and a Next/See Results button
-Result Screen – Score with percentage, performance message, full answer-by-answer review, and a Try Again button
+## Future Improvements
 
+- More quiz categories
+- Difficulty levels
+- Randomized questions from a larger database
+- Leaderboard
+- High score using Local Storage
+- Sound effects
+- Animations and transitions
+- Open Trivia DB API integration
+- Dark/Light mode toggle
 
-Features Breakdown
+---
 
+## Running the Project
 
-Question Bank – 5 hardcoded questions per category, reshuffled at the start of every quiz
-Timer System – 15-second countdown per question; text turns red at 5 seconds or below; auto-submits as an incorrect/timed-out answer if time runs out
-Scoring – Score is calculated as a percentage of correct answers out of total questions
-Feedback Messages
+1. Clone the repository:
 
-80% and above: "Excellent! You really know your stuff." 
-50–79%: "Good effort! A bit more practice and you'll ace it." 
-Below 50%: "Keep studying — you'll get there!" 
+```bash
+git clone https://github.com/your-username/quiz-app.git
+```
 
+2. Open the project folder:
 
+```bash
+cd quiz-app
+```
 
-Answer Review – Lists every question with your chosen answer, and shows the correct answer as well whenever you got it wrong
+3. Open `index.html` in your browser.
 
+No additional setup or dependencies are required.
 
-Browser Support
+---
 
+## License
 
-Chrome, Firefox, Safari, Edge (latest versions)
-Mobile browsers (iOS Safari, Chrome Mobile)
+This project is licensed under the MIT License.
 
+---
 
-Future Improvements
+## Author
 
+**Divyansh Verma**
 
-Difficulty levels (Easy, Medium, Hard)
-Leaderboard system
-Save progress/scores with localStorage
-More categories (Geography, Sports, etc.)
-Randomized questions pulled from an external API
-Dark/Light mode toggle
-
-
-Author
-Divyansh Verma
 GitHub: https://github.com/DV0220
